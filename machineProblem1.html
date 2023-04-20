@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="machineProblem1.js"></script>
+    <style>
+        table {
+            background: goldenrod;
+            position: relative;
+            width: 100%;
+            border: 1px solid;
+            border-color: black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        th {
+            font-weight: bold; 
+        }
+        td, th {
+            border: 1px solid;
+            border-color: black;
+            text-align: center;
+        }
+        td.name,td.gradeScore,td.letterGrade {
+            font-weight: bold;
+        }
+        td.name {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Machine Problem 1</h1>
+    <hr>
+    <table>
+        <tr>
+            <th>Name of Student</th>
+            <th>Class Participation</th>
+            <th>Summative Assessment</th>
+            <th>Exam Grade</th>
+            <th>Grade Score</th>
+            <th>Letter Grade</th>
+        </tr>
+        <tr>
+            <td class="name" id="data0_0">Data 1</td>
+            <td id="data0_1">Data 2</td>
+            <td id="data0_2">Data 3</td>
+            <td id="data0_3">Data 4</td>
+            <td class="gradeScore" id="data0_4">Data 5</td>
+            <td class="letterGrade" id="data0_5">Data 6</td>
+        </tr>
+        <tr>
+            <td class="name" id="data1_0">Data 1</td>
+            <td id="data1_1">Data 2</td>
+            <td id="data1_2">Data 3</td>
+            <td id="data1_3">Data 4</td>
+            <td class="gradeScore" id="data1_4">Data 5</td>
+            <td class="letterGrade" id="data1_5">Data 6</td>
+        </tr>
+        <tr>
+            <td class="name" id="data2_0">Data 1</td>
+            <td id="data2_1">Data 2</td>
+            <td id="data2_2">Data 3</td>
+            <td id="data2_3">Data 4</td>
+            <td class="gradeScore" id="data2_4">Data 5</td>
+            <td class="letterGrade" id="data2_5">Data 6</td>
+        </tr>
+        <tr>
+            <td class="name" id="data3_0">Data 1</td>
+            <td id="data3_1">Data 2</td>
+            <td id="data3_2">Data 3</td>
+            <td id="data3_3">Data 4</td>
+            <td class="gradeScore" id="data3_4">Data 5</td>
+            <td class="letterGrade" id="data3_5">Data 6</td>
+        </tr>
+        <tr>
+            <td class="name" id="data4_0">Data 1</td>
+            <td id="data4_1">Data 2</td>
+            <td id="data4_2">Data 3</td>
+            <td id="data4_3">Data 4</td>
+            <td class="gradeScore" id="data4_4">Data 5</td>
+            <td class="letterGrade" id="data4_5">Data 6</td>
+        </tr>
+    </table>
+    <hr>
+    <p>
+        Program:    Computation of Grades using Function <br>
+        Programmer: Matthew H. Lumugdang <br>
+        Section:    BCS24 <br>
+        Start Date: April 17, 2023 <br>
+        End Date:   April 20, 2023 <br>
+        Additional Notes: See machineProblem1.html for webpage table view, and through 'inspect' (right-click) -> 'console' for console table.
+    </p>
+    <script>
+        //for displaying in Webpage.
+        for (let d = 0; d < 5; d++) {
+            for (let e = 0; e < 6; e++) {
+                document.getElementById(`data${d}_${e}`).innerHTML = finalDataSet[d][e];
+            }
+        }
+    </script>
+</body>
+</html>
